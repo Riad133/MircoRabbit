@@ -12,7 +12,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="BankingController.cs" t="Include" />
         </e>
         <e p="MicroRabbit.Banking.Api.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -27,10 +27,10 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="WeatherForecast.cs" t="Include" />
       </e>
       <e p="MicroRabbit.Banking.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Interfaces" t="Include" />
         <e p="MicroRabbit.Banking.Application.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -39,14 +39,50 @@
             </e>
           </e>
         </e>
+        <e p="Services" t="Include">
+          <e p="AccountService.cs" t="Include" />
+          <e p="IAccountService.cs" t="Include" />
+        </e>
       </e>
       <e p="MicroRabbit.Banking.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Context" t="Include">
+          <e p="BankingDbContext.cs" t="Include" />
+        </e>
         <e p="MicroRabbit.Banking.Data.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20201221175030_Initial Migration.cs" t="Include" />
+          <e p="20201221175030_Initial Migration.Designer.cs" t="Include" />
+          <e p="BankingDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="MicroRabbit.Banking.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repository" t="Include">
+          <e p="AccountRepository.cs" t="Include" />
+        </e>
+      </e>
+      <e p="MicroRabbit.Banking.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CommandHandlers" t="Include" />
+        <e p="Commands" t="Include" />
+        <e p="Events" t="Include" />
+        <e p="EventsHandlers" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IAccountRepository.cs" t="Include" />
+        </e>
+        <e p="MicroRabbit.Banking.Domain.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="Account.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="MicroRabbit.Banking.Domain.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
