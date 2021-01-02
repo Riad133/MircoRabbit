@@ -20,10 +20,10 @@ namespace MicroRabbit.Banking.Api.Controllers
         }
         // GET
         [HttpGet("getAllAccounts")]
-        public ActionResult<IEnumerable<Account>>Get()
-        {
-            return Ok( _accountService.GetAccounts());
-        }
+                 public ActionResult<IEnumerable<Account>>Get()
+                 {
+                     return Ok( _accountService.GetAccounts());
+                 }
 
         [HttpPost("create-transaction")]
         public async Task<IActionResult> Post([FromBody] AccountTransfer accountTransfer)
